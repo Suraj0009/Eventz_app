@@ -3,7 +3,7 @@ import { loadStripe } from '@stripe/stripe-js';
 
 import { IEvent } from '@/lib/mongodb/database/models/event.model';
 import { Button } from '../ui/button';
-import { checkoutOrder } from '@/lib/mongodb/actions/order.actions';
+import { checkoutOrder } from '@/lib/actions/order.actions';
 
 loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
 
